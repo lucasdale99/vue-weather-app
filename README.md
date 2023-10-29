@@ -1,2 +1,2 @@
 # vue-weather-app
-Weather App in VueTs
+Weather App in VueTs for learning purposes
