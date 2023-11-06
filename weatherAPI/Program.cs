@@ -36,7 +36,7 @@ public class WeatherService
 
     public async Task<WeatherForecast> GetWeatherAsync(string city)
     {
-        var response = await _httpClient.GetAsync($"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=7e75f5957f5b378f40b60137da71e97c&units=metric");
+        var response = await _httpClient.GetAsync($"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=<APIKEY>&units=metric");
         response.EnsureSuccessStatusCode();
 
         var weatherData = await response.Content.ReadAsAsync<WeatherData>();
